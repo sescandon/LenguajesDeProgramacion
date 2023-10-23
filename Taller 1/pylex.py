@@ -12,6 +12,13 @@ reserved = {
     "else": "ELSE",
     "elif": "ELIF",
     "print": "PRINT",
+    "raise": "RAISE",
+    "split": "SPLIT",
+    "locals": "LOCALS",
+    "int": "INT",
+    "continue": "CONTINUE",
+    "or": "OR",
+
 }
 
 # Define the lexer tokens
@@ -37,6 +44,7 @@ tokens = [
     "TokenDivision",
     "TokenComentarioSencillo",
     "TokenComentarioMultilinea",
+    "TokenPorcentaje",
     
     "TokenIdentificador",
     "TokenNumero",
@@ -66,6 +74,7 @@ t_TokenMayor = r'>'
 t_TokenDivision = r'/'
 t_TokenComentarioSencillo = r'\#.*'
 t_TokenComentarioMultilinea = r'"""(.|\n)*?"""'
+t_TokenPorcentaje = r'%'
 
 
 
